@@ -28,8 +28,8 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- URL da solução: [Adicione a URL da solução aqui](https://your-solution-url.com)
-- URL do site ao vivo: [Adicione a URL do site ao vivo aqui](https://your-live-site-url.com)
+- URL da solução: [Adicione a URL da solução aqui](https://github.com/Lucascruz-lab/Componente-do-Cart-o)
+- URL do site ao vivo: [Adicione a URL do site ao vivo aqui](https://lucascruz-lab.github.io/Componente-do-Cart-o/)
 
 ## Meu Processo
 
