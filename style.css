@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -11,10 +10,106 @@ body {
     color: #ffffff;
     font-size: 15px;
     font-family: "Inter", sans-serif;
+    height: 100vh; /* Ocupa a altura total da viewport */
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
 }
 
-.container {
+#container {
+    position: relative;
     background-color: hsl(244, 38%, 16%);
-    padding: 10px;
-    margin: 8px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 70%; /* Mantém o container responsivo */
+    max-width: 1200px; /* Limita a largura máxima */
+    height: 400px; /* Altura mais fina */
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    flex: 1;
+    gap: 20px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+strong{
+    color: hsl(277, 64%, 61%);
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 20px; /* Espaçamento entre os itens da lista */
+    align-items: center;
+    justify-content: center;
+}
+
+li p {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+img {
+    border-radius: 5px;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+    z-index: 1;
+}    
+
+@media (max-width: 376px) {
+    #container {
+        flex-direction: column; /* Muda a direção do flex para coluna */
+        height: auto; /* Ajusta a altura para o conteúdo */
+        align-items: center; /* Centraliza os itens do contêiner */
+    }
+
+    img {
+        width: 100%; /* A imagem ocupa toda a largura do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+        margin-bottom: 20px; /* Adiciona um espaçamento entre a imagem e o conteúdo abaixo */
+    }
+
+    ul {
+        margin-top: 20px; /* Diminui a margem superior */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centraliza os itens da lista */
+        gap: 10px; /* Diminui o espaçamento entre os itens */
+    }
+
+    header {
+        padding: 10px; /* Reduz o padding do header */
+        text-align: center; /* Centraliza o texto no cabeçalho */
+    }
+
+    h1 {
+        font-size: 20px; /* Ajusta o tamanho da fonte do título */
+    }
+
+    p {
+        font-size: 14px; /* Ajusta o tamanho da fonte do parágrafo */
+    }
+
+    h2 {
+        font-size: 18px; /* Ajusta o tamanho da fonte dos subtítulos */
+    }
 }
